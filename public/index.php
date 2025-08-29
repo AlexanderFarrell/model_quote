@@ -1,7 +1,7 @@
 <?php
 if (strpos($_SERVER['REQUEST_URI'], '/api/') === 0) { require __DIR__.'/api.php'; exit; }
 $cfg = require __DIR__.'/../config.php';
-$CURRENCY = $cfg['currency'] ?? '£';
+$CURRENCY = $cfg['currency'] ?? '$';
 $BASE = $cfg['base_url'] ?? '';
 ?>
 <!doctype html>
